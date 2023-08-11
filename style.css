@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: auto;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: lightblue;
+    background-size: cover;
+    background-position: centre;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+ul {
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul {
+    float: right;
+    list-style-type: none;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover {
+    background-color: #fff;
+    color: black;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+.logo img {
+    float: left;
+    width: 80px;
+    margin: 3px 80px;
+}
+/* .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */
+/* .title h1 {
+    color: #fff;
+    font-size: 70px; */
+/* } */
+.button {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn {
+    border: 1px solid #fff;
+    padding: 2px;
+    margin: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover {
+    background-color: #fff;
+    color: black;
+}
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    margin: 20px 57px;
+
+}
+.dropdown {
+  height: auto;
+    /* position: relative; */
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(red, green, blue, alpha);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e;
+}
+.container {
+    margin: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+ h2 {
+    text-align: center;
+    font-size: 55px;
+}
+.sec-one {
+    margin-left: 130px;
+    margin-right: 100px;
+}
+.flip-main{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    margin-top: 70px;
+    margin-bottom: 98px;
+}
+
+.container-main{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.flip {
+    width: 450px;
+    height: 150px;   
+    text-align: center;
+    perspective: 600px;  
+  }
+  .flip-content {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+  }
+  .flip:hover .flip-content {
+    transform: rotateY(180deg);
+    transition: transform 0.3s;
+  }
+  .flip-front, .flip-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 150px;
+    backface-visibility: hidden;  
+    color: #fff;  
+    background-color: lightseagreen;
+    border: 6px solid lightcoral;
+    box-shadow: 6px 6px lightseagreen;
+  }
+
+  .flip-front p{
+  font-size: 16px;
+  width: max-content;
+  height: max-content;
+  }
+  .flip-back {
+    transform: rotateY(180deg);
+    border: 6px solid lightseagreen;
+    box-shadow: 6px 6px lightcoral;
+  }
+  h3 {
+    font-size: 20px;
+}
+
+  /* styles.css */
+/* ... existing styles ... */
+html {
+  font-size: 16px;
+}
+body {
+  background-color: lightblue
+}
+section {
+  padding: 30px;
+}
+h1 {
+    font-size: 3rem;
+    color: #a5b4fc;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  color: white;
+}
+.name-email {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.name-email div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+label {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+input, textarea {
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+}
+input[type="submit"] {
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+}
+.cta {
+  font-size: 1.1em;
+  color: white;
+  background: linear-gradient(#8E86B5, #ACAEED);
+  padding: 20px 30px;
+  border-radius: 50px;
+}
+.cta:hover {
+  text-decoration: none;
+  background: linear-gradient(#696484, #8788BA);
+}
+@media screen and (max-width: 750px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .name-email {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    position: relative;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  .container__image{
+    width: 400px;
+    height: 400px;
+  }
+  .container__text{
+    width: 600px;
+  }
+  .container__text h2{
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+ 
+  .container {
+     /* border: 3px solid blue; */
+     padding: 20px 40px 40px;
+     max-width: 640px;
+  }
+     image {
+        display: inline-block;
+        vertical-align: top;
+        width: 46%;
+        margin: 20px 30px 0 0;
+     }
+      text {
+        display: inline-block;
+        width: 46%;
+        @media (max-width: 620px) {
+           width: 100%;
+        }
+     }
+     .footer {
+      background-color: rgb(62, 87, 96);
+      color: white;
+      text-align: center;
+     }
+     h5 {
+      font-size: 35px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+     }
+     .para {
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-bottom: 40px;
+      margin-top: 10px;
+     }
